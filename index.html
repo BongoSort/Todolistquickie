@@ -5,20 +5,42 @@
     <title>ToDo List</title>
     <script type="application/javascript" src="ministore.js"></script>
     <link rel="stylesheet" href="styles.css">
+
+     <!--Font from google-->
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;900&display=swap" rel="stylesheet">
+     <!--Font Awesome CDN-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+     <!--Stylesheet-->
+     <link rel="stylesheet" href="styles.css">
+
   </head>
   <body>
+    <div id="notesListe">
+      <input id="listInput" placeholder="Add new list">
+      <button id="addList"> <i class="fa-solid fa-plus"> </i> Add List </button>
+      <div id="todoListBlock">
+        <div id="defaultTodoList"></div>
+        <div id="todoList">
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="main">
         <div class = "header">
           <h1> TODO LIST </h1>
           <div class = "inputForm">
             <input id="input" placeholder="Write a note">
-            <button id="clear">Clear notes</button>            
+            <button id="addNote"> <i class="fa-solid fa-plus"> </i> Add note </button>
+            <button id="clear">Clear notes</button>
           </div>
         </div>
+        
         <div id="notesBlok">
           <ul id="notes"></ul>
         </div>
       </div>
+
     <script type="application/javascript" src="main.js"></script>
   </body>
 </html>
